@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-<script type="text/javascript">
-
-</script>
+<script type="text/javascript"></script>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
 <script src="/static/graphs.js"></script>
-
+<script>
+    data = {{ value|tojson }}
+</script>
 </head>
-<body onload="myFunction(10)">
-<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<body onload=myFunction('danceablity',data)>
+<h1>spotify compare</h1>
+<div id="danceablity" style="height: 370px; width: 100%;"></div>
 </body>
 </html>

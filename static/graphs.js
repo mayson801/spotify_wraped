@@ -1,20 +1,20 @@
-function myFunction(apple) {
-    var chart = new CanvasJS.Chart("chartContainer", {
+function myFunction(name,data) {
+    var chart = new CanvasJS.Chart(name, {
         theme: "light1", // "light2", "dark1", "dark2"
-        animationEnabled: false, // change to true
+        animationEnabled: true, // change to true
         title:{
-            text: "Basic Column Chart"
+            text: name
         },
         data: [
         {
             // Change type to "bar", "area", "spline", "pie",etc.
             type: "column",
             dataPoints: [
-                { label: "apple",  y: apple  },
-                { label: "orange", y: 15  },
-                { label: "banana", y: 25  },
-                { label: "mango",  y: 30  },
-                { label: "grape",  y: 28  }
+                { label: "2016",  y: data.dancibilty[4]  },
+                { label: "2017", y: data.dancibilty[3]  },
+                { label: "2018", y: data.dancibilty[2]  },
+                { label: "2019",  y: data.dancibilty[1]  },
+                { label: "2020",  y: data.dancibilty[0]  }
             ]
         }
         ]
