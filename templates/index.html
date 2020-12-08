@@ -8,11 +8,25 @@
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
 <script src="/static/graphs.js"></script>
 <script>
-    data = {{ value|tojson }}
+    data = {{ value|tojson }},
+    dancibilty_data = data.dancibilty,
+    energy_data = data.energy,
+    acousticness_data = data.acousticness,
+    valence_data = data.valence,
+    tempo_data = data.tempo,
+    console.log(dancibilty_data[4])
 </script>
 </head>
-<body onload=myFunction('danceablity',data)>
+<body onload=myFunction('danceablity',dancibilty_data);myFunction('energy',energy_data);myFunction('acousticness',acousticness_data);myFunction('valence',valence_data);myFunction('tempo',tempo_data)>
+
 <h1>spotify compare</h1>
-<div id="danceablity" style="height: 370px; width: 100%;"></div>
+<p id="danceablity" style="height: 370px; width: 50%;"></p>
+<p id="energy" style="height: 370px; width: 50%;"></p>
+<div id="acousticness" style="height: 370px; width: 100%;"></div>
+<div id="valence" style="height: 370px; width: 100%;"></div>
+<div id="tempo" style="height: 370px; width: 100%;"></div>
+
+
+
 </body>
 </html>
