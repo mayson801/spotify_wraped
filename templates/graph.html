@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+
+
+<script>
+    var JSON_data = JSON.parse('{{ data | tojson | safe}}');
+</script>
+</head>
+<body onload="main(JSON_data)">
+
+<h1>spotify compare</h1>
+    <script src="/static/plotly_graph.js" type="text/javascript"></script>
+	<div id='plotly_graph'><!-- Plotly chart will be drawn inside this DIV --></div>
+</body>
+</html>
