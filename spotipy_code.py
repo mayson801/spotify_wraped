@@ -16,7 +16,12 @@ def search_playlist_for_tracks(auth, playlis_id):
     playlist_track_id_array = []
     for item in (playlist['tracks']['items']):
         track_id = item['track']['id']
-        playlist_track_id_array.append(track_id)
+        track_name = (item['track']['name'])
+        track_data = {
+            "id":track_id,
+            "track_name":track_name
+        }
+        playlist_track_id_array.append(track_data)
     return playlist_track_id_array
 #get the track_anaylis for songs and returns in python directories format
 def track_anaylis(auth,track_id):
@@ -47,6 +52,7 @@ def create_data_frame(songs):
         2018,
         2017,
         2016,
+        #"name",
 ])
     df.set_index("id", inplace = True)
     return df
@@ -64,14 +70,16 @@ def playlist_anylised(auth,playlist_id,year,data_frame):
         if year ==2020:
             repete = False
         else:
-            repete = check_for_repete(track,data_frame)
+            repete = check_for_repete(track["id"],data_frame)
         if repete == False:
-            track_data = track_anaylis(auth, track)
+            track_data = track_anaylis(auth, track["id"])
             track_data[2020] = False
             track_data[2019] = False
             track_data[2018] = False
             track_data[2017] = False
             track_data[2016] = False
+            track_data['name'] = track["track_name"]
+
 
             track_data[year] = True
 
@@ -102,12 +110,15 @@ def main(log):
         #creats new data frame and adds that to main data frame
         dataframe = create_data_frame(playlist[0])
         songs_df = pd.concat([dataframe,songs_df])
+        #edits the songs the already exsits in table and change the year to true
         for song in playlist[1]:
-            songs_df.at[song,year] = True
+            songs_df.at[song["id"],year] = True
         year = year-1
         print(year)
     result = songs_df.to_json(orient="records")
     json_file = json.loads(result)
     return json_file
-#if __name__ == '__main__':
- #   main(log_in())
+if __name__ == '__main__':
+    test = main(log_in())
+    print(json.dumps(test, indent=4, sort_keys=True))
+

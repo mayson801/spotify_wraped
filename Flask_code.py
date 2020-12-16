@@ -68,14 +68,14 @@ def loading():
  #   sp = spotipy.Spotify(auth=session['toke'])
   #  print (sp)
    # session["json_data"] = main(sp)
-    #with open('test_json.txt') as json_file:
-     #   data = json.load(json_file)
    # return redirect("graph")
 
 @app.route("/graph")
 def pass_to_graph():
     sp = spotipy.Spotify(auth=session['toke'])
-    json_data = main(sp)
+    #json_data = main(sp)
+    with open('test_json.txt') as json_file:
+        json_data = json.load(json_file)
     return render_template("graph.html", data=json_data)
 
 if __name__ == "__main__":
