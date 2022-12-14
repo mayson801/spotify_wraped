@@ -1,3 +1,5 @@
 authorise_keys.py
 /venv/*
 .cache
+test.py
+test_json.json

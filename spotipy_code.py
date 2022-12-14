@@ -2,6 +2,9 @@ import pandas as pd
 import json
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
+from datetime import date
+
+current_year = 2022
 
 #logs in to spotify
 def log_in():
@@ -26,7 +29,7 @@ def search_playlist_for_tracks(auth, playlis_id):
 #get the track_anaylis for songs and returns in python directories format
 def track_anaylis(auth,track_id):
     track_data = auth.audio_features(track_id)
-    track_data = track_data[0]
+    track_data = track_data
     return track_data
 def create_data_frame(songs):
     df = pd.DataFrame(songs,columns= ["danceability",
@@ -67,12 +70,13 @@ def playlist_anylised(auth,playlist_id,year,data_frame):
 
     playlist = search_playlist_for_tracks(auth, playlist_id,)
     for track in playlist:
-        if year ==2020:
+        if year ==2021:
             repete = False
         else:
             repete = check_for_repete(track["id"],data_frame)
         if repete == False:
             track_data = track_anaylis(auth, track["id"])
+            track_data[2021] = False
             track_data[2020] = False
             track_data[2019] = False
             track_data[2018] = False
@@ -89,7 +93,7 @@ def playlist_anylised(auth,playlist_id,year,data_frame):
             repeat_tracks.append(track)
     return (anaysied_playlist_songs,repeat_tracks)
 def get_playlist_ids(auth):
-    year=2020
+    year=current_year
     playlist_ids = []
     while year != 2015:
         results = auth.search(q='"your top songs "'+ str(year), type='playlist')
@@ -100,10 +104,10 @@ def get_playlist_ids(auth):
     return playlist_ids
 
 def main(log):
-    year = 2020
     songs_df = pd.DataFrame()
     playlist_ids = get_playlist_ids(log)
 
+    year = 2022
     for playlist_id in playlist_ids:
         #gets the playlist anaylised returns array
         playlist = playlist_anylised(log,playlist_id,year,songs_df)

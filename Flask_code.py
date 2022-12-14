@@ -2,19 +2,16 @@ from flask import Flask, render_template, redirect, request, session, make_respo
 import requests
 from spotipy_code import *
 import authorise_keys
+import new_update_data
 
 app = Flask(__name__)
 
 app.secret_key = authorise_keys.app_secret_key
-
-
-
 API_BASE = 'https://accounts.spotify.com'
 
 # Make sure you add this to Redirect URIs in the setting of the application dashboard
 REDIRECT_URI = "http://127.0.0.1:5000/api_callback"
-
-SCOPE = 'playlist-modify-private,playlist-modify-public,user-top-read'
+SCOPE = 'user-top-read,playlist-read-private,playlist-read-collaborative'
 
 # Set this to True for testing but you probably want it set to False in production.
 SHOW_DIALOG = True
@@ -63,19 +60,18 @@ def api_callback():
 def loading():
     return render_template("loading.html")
 
-#@app.route("/load_data")
-#def load_data():
- #   sp = spotipy.Spotify(auth=session['toke'])
-  #  print (sp)
-   # session["json_data"] = main(sp)
-   # return redirect("graph")
-
 @app.route("/graph")
 def pass_to_graph():
-    sp = spotipy.Spotify(auth=session['toke'])
-    #json_data = main(sp)
-    with open('test_json.txt') as json_file:
+        #get login key
+        #uses real data
+    #sp = spotipy.Spotify(auth=session['toke'])
+    #json_data=new_update_data.merge_arrays(new_update_data.playlist_anylised_new(sp,new_update_data.get_playlist_ids(sp)))
+
+        #use test data
+    with open('test_json.json') as json_file:
         json_data = json.load(json_file)
+
+    #load template graph.html passing JSON data
     return render_template("graph.html", data=json_data)
 
 if __name__ == "__main__":

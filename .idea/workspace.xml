@@ -20,12 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9785439-8684-4b79-b735-122cce9114e1" name="Default Changelist" comment="update">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/spotify_wrapped1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/spotify_wrapped1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Flask_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flask_code.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spotipy_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/spotipy_code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/plotly_graph.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/plotly_graph.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/graph.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/graph.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_json.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_json.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_json.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +38,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1lRDZ7aKQUxrD7k0GtkJmembHET" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -51,7 +57,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
@@ -64,7 +73,10 @@
       <recent name="D:\spotify_wraped\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Flask_code">
+  <component name="RunManager" selected="Python.new_update_data">
+    <configuration name="graph.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/spotify_wraped/templates/graph.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="Flask_code" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="spotify_wrapped1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,6 +89,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Flask_code.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -86,7 +99,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="new_update_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="spotify_wrapped1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -98,7 +111,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\spotify_wraped\Flask_code.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/new_update_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -119,6 +133,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spotipy_code.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -128,7 +143,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="spotipy_code" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="spotify_wrapped1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -140,28 +155,8 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:\spotify_wraped\spotipy_code.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="spotify_wrapped1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test2.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -173,10 +168,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.Flask_code" />
+        <item itemvalue="Python.new_update_data" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.spotipy_code (1)" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.test2" />
-        <item itemvalue="Python.spotipy_code" />
+        <item itemvalue="JavaScript Debug.graph.html" />
       </list>
     </recent_temporary>
   </component>
@@ -191,6 +186,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607287939346</updated>
+      <workItem from="1668799734082" duration="16614000" />
+      <workItem from="1668888700557" duration="1076000" />
+      <workItem from="1669675859444" duration="7613000" />
+      <workItem from="1669721140444" duration="472000" />
+      <workItem from="1670530088935" duration="94976000" />
     </task>
     <task id="LOCAL-00001" summary="first_add">
       <created>1607288820321</created>
@@ -265,6 +265,9 @@
     <option name="localTasksCounter" value="11" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -275,7 +278,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first_add" />
@@ -283,50 +285,10 @@
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="718" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608058030051">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="718" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1608058030051" />
-    <state width="1899" height="351" key="GridCell.Tab.0.bottom" timestamp="1608156171791">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="351" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608156171791" />
-    <state width="1899" height="351" key="GridCell.Tab.0.center" timestamp="1608156171790">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="351" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608156171790" />
-    <state width="1899" height="351" key="GridCell.Tab.0.left" timestamp="1608156171790">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="351" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608156171790" />
-    <state width="1899" height="351" key="GridCell.Tab.0.right" timestamp="1608156171790">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="351" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608156171790" />
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom" timestamp="1607962415176">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607962415176" />
-    <state width="1899" height="348" key="GridCell.Tab.1.center" timestamp="1607962415176">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607962415176" />
-    <state width="1899" height="348" key="GridCell.Tab.1.left" timestamp="1607962415175">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607962415175" />
-    <state width="1899" height="348" key="GridCell.Tab.1.right" timestamp="1607962415176">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607962415176" />
-    <state x="184" y="9" key="SettingsEditor" timestamp="1607635840586">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="184" y="9" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607635840586" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1608062280535">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1608062280535" />
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/spotify_wraped$new_update_data.coverage" NAME="new_update_data Coverage Results" MODIFIED="1671056024088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/spotify_wraped$test.coverage" NAME="test Coverage Results" MODIFIED="1670845163411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/spotify_wraped$Flask_code.coverage" NAME="Flask_code Coverage Results" MODIFIED="1671056179419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/spotify_wraped$spotipy_code__1_.coverage" NAME="spotipy_code (1) Coverage Results" MODIFIED="1670544244548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
